@@ -16,6 +16,9 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.btl_nhom5_final.R;
+import com.example.btl_nhom5_final.database.MyDatabaseHelper;
+import com.example.btl_nhom5_final.dto.BaoCaoGiangDayDTO;
 import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.ArrayList;

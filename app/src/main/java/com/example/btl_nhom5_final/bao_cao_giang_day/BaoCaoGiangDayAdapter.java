@@ -12,6 +12,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.btl_nhom5_final.R;
+import com.example.btl_nhom5_final.dto.BaoCaoGiangDayDTO;
+
 import java.util.List;
 
 public class BaoCaoGiangDayAdapter extends ArrayAdapter<BaoCaoGiangDayDTO> {
