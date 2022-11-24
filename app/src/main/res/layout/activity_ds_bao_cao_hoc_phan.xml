@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".ds_bao_cao_hoc_phan.DSBaoCaoHocPhan">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar_DSBCHP"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/xem_ds_bcao_hphan_menu"
+            app:navigationContentDescription="@string/xem_ds_bcao_hphan"
+            app:navigationIcon="@drawable/ic_go_back"
+            app:navigationIconTint="@color/white"
+            app:title="@string/xem_ds_bcao_hphan" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable content -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- CODE GIAO DIỆN Ở ĐÂY NHÁ -->
+
+        <ListView
+            android:id="@+id/listView_DSBCHP"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:paddingHorizontal="10dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="15dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/textView_DSBCHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xem_ds_bcao_hphan_hint"
+                android:textColor="@color/blue_dark" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- Note: A RecyclerView can also be used -->
+
+</LinearLayout>
