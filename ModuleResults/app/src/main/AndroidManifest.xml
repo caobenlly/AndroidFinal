@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nhom5_btl">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ModuleResults">
+        <activity android:name="com.nhom5_btl.dashboard.Dashboard" />
+        <activity android:name="com.nhom5_btl.ds_bao_cao_hoc_phan.DSBaoCaoHocPhan" />
+        <activity android:name="com.nhom5_btl.bao_cao_giang_day.BaoCaoGiangDayActivity" />
+        <activity android:name="com.nhom5_btl.chi_tiet_bao_cao_hoc_phan.ChiTietBaoCaoHocPhan" />
+        <activity
+            android:name="com.nhom5_btl.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
